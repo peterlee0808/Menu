@@ -118,6 +118,7 @@ function diplayMenuItems(menuItems) {
   
     sectionCenter.innerHTML = displayMenu;
   }
+
   function displayMenuButtons() {
     const categories = menu.reduce(
       function (values, item) {
@@ -139,8 +140,8 @@ function diplayMenuItems(menuItems) {
     btnContainer.innerHTML = categoryBtns;
     const filterBtns = btnContainer.querySelectorAll(".filter-btn");
     console.log(filterBtns);
-  
-filterBtns.forEach(function (btn) {
+    
+    filterBtns.forEach(function (btn) {
     btn.addEventListener("click", function (e) {
         // console.log(e.currentTarget.dataset);
         const category = e.currentTarget.dataset.id;
